@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns#" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <base href="http://go.pardot.com" >
+    <meta charset="utf-8"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="description" content="%%description%%"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;700&display=swap" rel="stylesheet">
+    <!-- Optional IE8 Support -->
+    <!--[if lt IE 9]> 
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script> 
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script> 
+    <!--[endif]---->
+    <title>%%title%%</title>
+    <style>
+        .inline { display: inline;}
+        .errors, .error {  font-size: 12px;    color: red; font-family: 'Poppins',Helvetica,Arial, sans-serif;}
+        .wrapper {   margin: 0 auto; }
+        .underform_text-container {    margin-top: 30px;}
+        .underform_text-header {   font-size: 20px;            font-weight: bold;   margin-bottom: 15px;}
+        .underform_text-list {            padding-left: 0;            list-style: none;}
+        .underform_text-item {padding-left: 30px;margin-bottom:10px;padding-top:8px;min-height:33px;position: relative;}
+        .underform_text-item:before {content: '✓';position: absolute;left: 0;top: 5px;font-size: 20px;color: #84bd00;}
+        form.form p label {width: 100% !important;max-width: 350px;color: #3b3b3b !important;padding:0 !important;float:unset !important;text-align: left !important;padding:0 0 10px 0 !important;font-family: 'Poppins',Helvetica,Arial, sans-serif;}
+        form.form p input, form.form p select {   width: 100% !important; font-family: 'Poppins',Helvetica,Arial, sans-serif;}        
+        form.form p.submit {margin:0 !important;}
+        form.form p.submit input[type="submit"] {border: none;outline: none;min-height: 50px;width: 100%;max-width: 350px;color: #ffffff;font-weight: bold;text-transform: uppercase;letter-spacing: .1rem;font-family: 'Poppins',Helvetica,Arial, sans-serif;
+            background: #00d7d2;
+        }
+        
+        form.form .pd-checkbox input[type="checkbox"] { width: auto;display: inline-block;vertical-align: top;}
+        form.form .pd-checkbox label {max-width: 350px;margin: 0 0 0 15px;font-weight: normal;}
+        @media screen and (max-width: 992px) {#pardot-form {padding-top: 30px;}}
+
+
+        body{background:#FFFFFF;color:#333;padding:0;margin:0; font-family: 'Poppins',Helvetica,Arial, sans-serif;}
+        h1,h2,h3,h4,h5,h6{font-family: 'Poppins',Helvetica,Arial, sans-serif;}
+        header .bannerContainer{width:100%;}
+        header .bannerContainer .bannerimage{width:100%;}
+        .bannerimage.desktop{display: block;}
+
+        section {padding:50px 0;}
+        section .sectionContainer{width:90%;margin:0px auto;max-width:1280px;}
+        section .gridContainer{display:grid;grid-template-columns: 1fr 1fr;grid-gap:10%;}
+        section .leftContainer {color:#333;}
+        section .leftContainer .linea{position: relative;display:inline-block;}
+        section .leftContainer .linea:after{content:"";position: absolute;bottom:-10px;left:0;width:100%;height:2px;background:#c7c6c6;}
+        section .leftContainer .sameline h3,
+        section .leftContainer .sameline p{display: inline;}
+        section .leftContainer p{font-size:1.5rem; margin:0;}
+        section .leftContainer p span{font-weight: 700;}
+        section .leftContainer h3.gradient{margin:0;padding:0;font-weight: bold;background: var(--gradient-text);-webkit-background-clip: text;-webkit-text-fill-color: transparent;}
+
+        section .leftContainer .reporte-grid{display:grid;grid-template-columns: 1fr 3fr;align-items: center;grid-gap:10px;}
+
+    section .leftContainer ol{list-style:none;}
+        section .leftContainer ol li{color:#333;}
+        section .leftContainer ol.listanum li{position:relative;}
+
+        section .leftContainer ol.listaletra{list-style: none;}
+        section .leftContainer ol.listaletra > li{  text-indent: -5px;}
+    section .leftContainer ol.listaletra > li:before {  content: "- ";  text-indent: -5px;}
+        section .leftContainer ol.listaletra li:nth-child(1):after{content:none;}
+        section .leftContainer ol.listaletra li:nth-child(2):after{content:none;}
+        section .leftContainer ol.listaletra li:nth-child(3):after{content:none;}
+
+        section .rightContainer .formContainer{width:100%;padding:0 5px;}
+
+        footer{padding:30px 0;background-color:#ffffff;}
+        footer .container{width:90%;max-width:1080px; text-align: center;color:#192F44; display:flex;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;flex-direction: column;grid-gap:10px}
+        footer .container a{font-size:1.1rem;color:#3b3b3b;display:flex;display: -webkit-box;display: -ms-flexbox;display: -webkit-flex;justify-content:center; align-items: center;text-decoration: none;grid-gap:5px;}
+        footer .container a svg{display:inline-block;}
+        footer .container a svg path{fill:#3b3b3b;}
+        footer .container a p{display:inline-block;margin:0;font-weight: bold;font-size: 18px;}
+        footer .container .copyright-text{margin-top:15px;font-size: 18px;}
+
+        @media screen and (max-width: 2560px){ 
+            /*  27'' */
+            body{height:100vh;display:grid;grid-template-rows: 1fr 1fr 215px;background: #FFFFFF;}
+        }
+
+        @media screen and (max-width: 1920px){
+            /* 24''  */
+        }
+
+        @media screen and (max-width: 1920px){
+            /* 13''  */
+            body{height: auto;display: block;}
+        }
+
+        @media screen and (max-width: 740px){
+            section{padding:20px 0;}
+            section .sectionContainer{margin:0px auto;}
+            section .gridContainer{grid-template-columns: 1fr;grid-gap: 50px;text-align: center;}
+
+            section .leftContainer h1{font-size:3rem;margin-top:0;}
+            section .leftContainer ol.listanum{text-align: left;margin:0 auto;max-width: 460px;}
+        }
+
+        @media screen and (max-width: 560px){
+            section .leftContainer h1{font-size:2.5rem;}
+            section .leftContainer .reporte-grid{grid-template-columns: 1fr;grid-gap: 50px;text-align: center;}
+        }
+        @media screen and (max-width: 440px){section .leftContainer h1{font-size:2.2rem;}}
+        @media screen and (max-width: 360px){section .leftContainer h1{font-size:2rem;}}
+        @media screen and (max-width: 320px){section .leftContainer h1{font-size:1.5rem;}}
+    
+    </style>
+</head>
+<body>
+    <header class="content">
+        <div class="bannerContainer">
+            <img class="bannerimage desktop" src="https://mcusercontent.com/5dadf5f19ddd20585e158d7e8/images/57817641-a6a9-f26f-3a61-42fc86848c18.png" alt="white paper banner desktop" />
+        </div>
+    </header>
+    <!-- content container -->
+    <section>
+        <div class="sectionContainer">
+            <div class="gridContainer">
+                <div class="leftContainer">
+                    <p style="font-size:24px;">En un mundo donde la movilidad corporativa evoluciona a gran velocidad,<br><span style="color:#05d7d2">Fleet Forums Monterrey es la plataforma ideal para mantenerse a la vanguardia.</span><br><b>Durante este evento abordaremos:</b></p>
+                    <br><br>
+                    <div class="reporte-grid" >
+                        <div class="image">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451.72 416.92" width="100px" height="92px">
+                              <rect style="fill: #f8f7f7;" width="451.72" height="416.92" rx="46.9" ry="46.9"/>
+                              <g>
+                                <path style="fill: #00d7d2;" d="M342.89,224.62l-.38-.38v-71.06h19.08c.93,0,1.83-.38,2.48-1.04.69-.66,1.04-1.55,1.04-2.48s-.35-1.86-1.04-2.52l-45.22-45.22c-1.38-1.41-3.62-1.41-5,0l-45.26,45.22c-.66.66-1.04,1.55-1.04,2.48,0,1.97,1.59,3.55,3.55,3.55h19.08v51.81l-1.21.07c-9.21.59-18.11,2.97-26.46,7.07l-1.66.79-.21-1.79c-.97-8.18-3.9-16.11-8.42-22.94l-.21-.34v-66.34h19.08c.93,0,1.83-.38,2.48-1.04.69-.66,1.04-1.55,1.04-2.52s-.35-1.83-1.04-2.48l-45.22-45.22c-1.38-1.38-3.62-1.38-5,0l-45.26,45.22c-.66.66-1.04,1.55-1.04,2.52,0,1.93,1.59,3.52,3.55,3.52h19.08v43.33l-1.07.21c-13.97,2.42-26.63,10.52-34.74,22.25l-2.35,3.41v-37.53h19.08c.93,0,1.83-.38,2.52-1.04.66-.66,1.03-1.55,1.03-2.48s-.38-1.86-1.03-2.52l-45.26-45.22c-1.38-1.41-3.62-1.41-5,0l-45.23,45.22c-.69.66-1.03,1.55-1.03,2.52,0,1.93,1.59,3.52,3.52,3.52h19.08v42.67h-19.08c-1.93,0-3.52,1.59-3.52,3.55v144.78c0,1.93,1.59,3.52,3.52,3.52h167.38c1.97,0,3.55-1.59,3.55-3.52v-4.42l1.86.9c9.69,4.69,20.01,7.04,30.67,7.04h45.36c1.97,0,3.55-1.59,3.55-3.52v-15.73l.38-.38c24.63-23.39,29.36-61.2,11.21-89.93-3.04-4.79-6.8-9.35-11.21-13.52ZM279.66,146.11l36.67-36.7,36.7,36.7h-14.07c-1.97,0-3.55,1.59-3.55,3.55v68.65l-2-1.34c-7.38-4.9-15.42-8.38-23.98-10.31-3.31-.72-6.9-1.24-10.97-1.52l-1.21-.07v-55.4c0-1.97-1.59-3.55-3.52-3.55h-14.07ZM189.17,114.44l36.67-36.7,36.7,36.7h-14.07c-1.93,0-3.55,1.59-3.55,3.52v61.33l-2.14-1.86c-9.66-8.45-21.97-13.14-34.7-13.21h-1.31v-46.26c0-1.93-1.59-3.52-3.52-3.52h-14.07ZM207.77,171.29c12.73,0,24.29,5.21,32.63,13.59,8.38,8.35,13.56,19.9,13.59,32.63l-.07.79s.03.14,0,.24c-.48,24.84-21.18,45.16-46.16,45.16s-46.23-20.73-46.23-46.19,20.73-46.22,46.23-46.22ZM98.69,146.11l36.7-36.7,36.67,36.7h-14.07c-1.93,0-3.52,1.59-3.52,3.55v46.19h-38.15v-46.19c0-1.97-1.62-3.55-3.55-3.55h-14.07ZM93.69,202.96h62.82l-.38,1.59c-.72,2.86-1.21,5.55-1.41,8.24l-.1,1.17h-60.92v-11ZM93.69,221.03h60.92l.1,1.17c.21,2.69.69,5.38,1.41,8.24l.38,1.62h-62.82v-11.04ZM93.69,239.14h65.4l.35.72c1.38,2.93,2.97,5.73,4.76,8.25l1.45,2.03h-71.96v-11ZM93.69,257.22h78.65l.38.35c3.79,3.31,8.04,6.07,12.59,8.21l5.28,2.48h-96.9v-11.04ZM154.47,340.63h-60.78v-11h60.78v11ZM154.47,322.52h-60.78v-11h60.78v11ZM154.47,304.45h-60.78v-11.04h60.78v11.04ZM154.47,286.34h-60.78v-11h60.78v11ZM253.99,340.63h-92.45v-11h92.45v11ZM253.99,322.52h-92.45v-11h92.45v11ZM253.99,304.45h-92.45v-11.04h92.45v11.04ZM253.99,286.34h-92.45v-11h92.45v11ZM335.4,340.63h-10.38l4.83-2.79c.69-.38,1.38-.76,2.04-1.17.27-.17.52-.38.79-.55.24-.17.48-.35.72-.52l2-1.34v6.38ZM339.2,321.8c-12.14,12.14-28.29,18.84-45.46,18.84-11.28,0-22.28-2.97-32.01-8.59l-.66-.38v-59.89c0-1.93-1.59-3.52-3.55-3.52h-32.67l5.31-2.48c17.39-8.11,29.15-25.01,30.7-44.05l.04-.69.59-.31c9.83-5.73,20.97-8.73,32.25-8.73,17.21,0,33.36,6.69,45.5,18.83,12.14,12.18,18.83,28.32,18.8,45.5,0,17.18-6.69,33.32-18.83,45.47Z"/>
+                                <path style="fill: #00d7d2;" d="M318.84,256.19l-45.26,45.26c-.66.66-1.55,1.04-2.48,1.04-1.97,0-3.55-1.59-3.55-3.55,0-.93.38-1.83,1.04-2.48l45.22-45.22c.69-.66,1.55-1,2.48-1h.03c.97,0,1.83.38,2.48,1.07,1.34,1.38,1.34,3.55.03,4.9Z"/>
+                                <path style="fill: #00d7d2;" d="M275.62,245.63c-6.93,0-12.59,5.66-12.59,12.59s5.66,12.59,12.59,12.59,12.59-5.66,12.59-12.59-5.66-12.59-12.59-12.59ZM275.62,263.71c-3.04,0-5.52-2.45-5.52-5.49s2.48-5.52,5.52-5.52,5.52,2.48,5.52,5.52-2.48,5.49-5.52,5.49Z"/>
+                                <path style="fill: #00d7d2;" d="M311.81,281.82c-6.93,0-12.59,5.66-12.59,12.59s5.66,12.59,12.59,12.59,12.59-5.66,12.59-12.59-5.66-12.59-12.59-12.59ZM311.81,299.93c-3.04,0-5.52-2.48-5.52-5.52s2.48-5.52,5.52-5.52,5.52,2.48,5.52,5.52-2.48,5.52-5.52,5.52Z"/>
+                                <path style="fill: #00d7d2;" d="M224.88,229.66c-.62,6.86-5.76,12.52-12.52,13.76l-1.07.17v5.59c0,1.93-1.59,3.52-3.52,3.52s-3.55-1.59-3.55-3.52v-5.52l-1.17-.1c-5.21-.45-9.76-3.86-11.59-8.69-.31-.9-.27-1.86.14-2.72.41-.86,1.14-1.48,2-1.83.41-.14.79-.21,1.21-.21.52,0,1.04.1,1.52.34.86.41,1.48,1.1,1.83,2.04.97,2.45,3.41,4.1,6.21,4.1h4.62c4.35.28,8.11-2.72,8.83-7.14.07-1.69-.52-3.35-1.59-4.66-1.1-1.34-2.66-2.28-4.35-2.69l-9.87-2.31c-6.59-1.48-11.28-7.24-11.35-14.01,0-3.9,1.62-7.62,4.45-10.28,2.21-2.07,4.97-3.45,8.04-3.93l1.07-.17v-5.55c0-1.97,1.59-3.55,3.55-3.55s3.52,1.59,3.52,3.55v5.49l1.21.1c5.21.45,9.76,3.86,11.56,8.69.35.9.28,1.86-.1,2.73-.41.86-1.14,1.52-2.04,1.83-.86.31-1.83.28-2.69-.14-.86-.41-1.52-1.1-1.83-2.04-1-2.45-3.42-4.07-6.21-4.07h-5.55c-2.11-.1-4.14.76-5.66,2.21-1.41,1.31-2.24,3.17-2.28,5.17.14,3.48,2.59,6.38,5.93,7.07l9.83,2.31c3.21.76,6.11,2.59,8.17,5.11,2.21,2.66,3.35,6,3.24,9.35Z"/>
+                              </g>
+                            </svg>
+                        </div>
+                        <div class="texto">
+                            <p style="font-size: 24px;"><b>Perspectivas económicas</b> y<br> su impacto en la gestión de flotillas.</p>
+                        </div>
+                        <div class="image">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451.72 416.92" width="100px" height="92px">
+                              <rect style="fill: #f8f7f7;" width="451.72" height="416.92" rx="46.9" ry="46.9"/>
+                              <g>
+                                <rect style="fill: #00d7d2;" x="97.16" y="241.16" width="28.44" height="7.66"/>
+                                <rect style="fill: #00d7d2;" x="138.71" y="241.16" width="23.25" height="7.66"/>
+                                <rect style="fill: #00d7d2;" x="97.16" y="319.08" width="18.05" height="7.66"/>
+                                <rect style="fill: #00d7d2;" x="159.49" y="293.11" width="28.44" height="7.66"/>
+                                <rect style="fill: #00d7d2;" x="175.08" y="241.16" width="12.86" height="7.66"/>
+                                <rect style="fill: #00d7d2;" x="97.16" y="267.14" width="18.05" height="7.66"/>
+                                <rect style="fill: #00d7d2;" x="97.16" y="293.11" width="49.22" height="7.66"/>
+                                <rect style="fill: #00d7d2;" x="128.33" y="319.08" width="28.44" height="7.66"/>
+                                <rect style="fill: #00d7d2;" x="128.33" y="267.14" width="59.61" height="7.66"/>
+                                <path style="fill: #00d7d2;" d="M72.58,160.95c-3.38,7.08-.37,15.58,6.7,18.96,1.9.91,4.02,1.39,6.13,1.39h0c7.84,0,14.22-6.37,14.22-14.21,0-2.11-.48-4.23-1.39-6.13l-.42-.87,16.95-16.95.87.42c3.42,1.64,7.28,1.84,10.86.58,3.58-1.26,6.45-3.85,8.09-7.27.22-.46.41-.92.58-1.4l.32-.91h24.5l.32.91c1.27,3.58,3.85,6.45,7.28,8.09,3.43,1.64,7.28,1.84,10.87.58,4.87-1.72,8.43-5.96,9.28-11.06l.08-.49,30.41-26.07.82.43c3.36,1.77,7.21,2.12,10.84.99,3.63-1.13,6.6-3.61,8.36-6.97,3.65-6.94.96-15.56-5.98-19.2-6.94-3.65-15.56-.96-19.2,5.98-2.01,3.82-2.18,8.28-.47,12.24l.4.92-26.76,22.94-.86-1.24c-2.17-3.12-5.41-5.21-9.15-5.88-3.73-.67-7.51.15-10.63,2.31-2.46,1.71-4.29,4.11-5.29,6.94l-.32.91h-24.5l-.32-.91c-1.27-3.58-3.85-6.45-7.28-8.09-3.42-1.64-7.28-1.84-10.86-.58-3.58,1.26-6.45,3.85-8.09,7.28-1.64,3.43-1.84,7.29-.58,10.87.17.48.36.94.58,1.39l.42.87-16.95,16.95-.87-.42c-7.08-3.38-15.58-.37-18.96,6.7ZM225.66,87.8h0c3.61,0,6.56,2.94,6.56,6.56s-2.94,6.56-6.56,6.56-6.56-2.94-6.56-6.56c0-3.61,2.95-6.55,6.56-6.56ZM173.71,124.16h0c3.62,0,6.56,2.94,6.56,6.56s-2.94,6.56-6.56,6.56-6.56-2.94-6.56-6.56c0-3.61,2.95-6.55,6.56-6.56ZM121.77,124.16h0c3.61,0,6.55,2.94,6.55,6.56s-2.94,6.56-6.55,6.56-6.56-2.94-6.56-6.56c0-3.61,2.94-6.55,6.56-6.56ZM85.41,173.63c-3.61,0-6.56-2.94-6.56-6.56,0-3.61,2.95-6.55,6.56-6.56h0c3.62,0,6.56,2.94,6.56,6.56s-2.94,6.56-6.56,6.56Z"/>
+                                <path style="fill: #00d7d2;" d="M85.41,363.1h114.28c7.83,0,14.21-6.39,14.22-14.22v-16.94h166.22v-7.66h-10.39v-126.03c0-2.11-1.72-3.83-3.83-3.83h-31.17c-2.11,0-3.83,1.72-3.83,3.83v27.34h-27.34c-2.11,0-3.83,1.72-3.83,3.83v27.34h-27.34c-2.11,0-3.83,1.72-3.83,3.83v27.34h-27.34c-2.11,0-3.83,1.72-3.83,3.83v32.53h-39.58l-.32-.91c-1.27-3.58-3.85-6.45-7.28-8.09-3.43-1.64-7.29-1.84-10.87-.58-7.39,2.61-11.28,10.75-8.67,18.15,2.61,7.39,10.75,11.28,18.15,8.67,4.07-1.44,7.23-4.6,8.67-8.67l.32-.91h8.42v16.95c0,3.61-2.95,6.55-6.56,6.56h-114.28c-3.61,0-6.55-2.95-6.56-6.56v-120.84h27.34c7.83,0,14.21-6.39,14.22-14.22v-27.33h79.28c3.61,0,6.55,2.94,6.56,6.56v3.83h7.66v-3.83c0-7.83-6.39-14.21-14.22-14.22h-78.84c-3.74,0-7.39,1.52-10.02,4.16l-35.47,35.47c-2.66,2.64-4.18,6.31-4.16,10.05v120.37c.01,7.83,6.39,14.21,14.22,14.22ZM338.57,202.08h23.51v122.2h-23.51v-122.2ZM307.41,233.24h23.51v91.03h-23.51v-91.03ZM276.24,264.41h23.5v59.87h-23.5v-59.87ZM245.07,295.58h23.5v28.7h-23.5v-28.7ZM184.1,334.66h0c-3.62,0-6.56-2.94-6.56-6.56s2.94-6.56,6.56-6.56,6.56,2.94,6.56,6.56c0,3.61-2.95,6.55-6.56,6.56ZM112.74,191.91v21.92c0,3.61-2.95,6.55-6.55,6.56h-21.92l28.48-28.47Z"/>
+                                <path style="fill: #00d7d2;" d="M377.59,100.75c-5.19-16.94-16.68-30.85-32.33-39.16-15.65-8.31-33.61-10.02-50.55-4.83-16.94,5.19-30.85,16.68-39.16,32.33-15.39,29-7.53,64.37,18.7,84.11l1.25.94-35.84,35.84h-47.02l-.32-.91c-1.27-3.58-3.85-6.45-7.28-8.09-3.43-1.64-7.29-1.84-10.87-.58-7.39,2.61-11.28,10.75-8.67,18.14,2.61,7.39,10.75,11.28,18.15,8.67,4.07-1.44,7.23-4.6,8.67-8.67l.32-.91h13.61v93.5h7.66v-93.5h27.34c1.02,0,1.98-.4,2.71-1.12l38.2-38.2.89.47c15.65,8.31,33.61,10.02,50.55,4.83,16.94-5.19,30.85-16.68,39.16-32.33,8.31-15.65,10.02-33.61,4.83-50.55ZM178.91,220.38h0c-3.62,0-6.56-2.94-6.56-6.56s2.94-6.56,6.56-6.56,6.56,2.94,6.56,6.56c0,3.61-2.95,6.55-6.56,6.56ZM348.68,167.39c-10.43,7.69-22.59,11.4-34.65,11.4-17.96,0-35.69-8.22-47.14-23.74-9.28-12.57-13.1-28-10.77-43.45,2.33-15.45,10.54-29.06,23.11-38.34,8.6-6.35,18.78-10.21,29.42-11.18l1.49-.13v58.39c0,.94.34,1.84.97,2.54l38.78,43.64-1.2.89ZM372.22,125.65c-1.18,12.91-6.72,25.23-15.6,34.67l-1.02,1.09-33.11-37.24h49.86l-.13,1.49ZM317.8,116.5v-54.56l1.49.14c28.07,2.6,50.34,24.87,52.94,52.94l.14,1.49h-54.57Z"/>
+                                <rect style="fill: #00d7d2;" x="138.71" y="215.19" width="12.86" height="7.66"/>
+                              </g>
+                            </svg>
+                        </div>
+                        <div class="texto">
+                            <p style="font-size: 24px;"><b>El rol estratégico de la (FMC)</b> para maximizar eficiencia y resultados.</p>
+                        </div>
+                        <div class="image">
+                            <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 451.72 416.92" width="100px" height="92px">
+                              <rect style="fill: #f8f7f7;" width="451.72" height="416.92" rx="46.9" ry="46.9"/>
+                              <path style="fill: #00d7d2;" d="M350.31,256.14l-1.34-5.01c-1.82-6.81-7.85-11.39-14.54-11.72l-3.46-6c-4.25-7.36-13.56-10.02-21.03-6.13-2.13-3.36-5.4-5.76-9.26-6.79-4.09-1.1-8.35-.53-12.02,1.58l-11.02,6.36-14.93,8.62-21.16,12.21-14.44-14.44h15.39c4,0,7.77-1.56,10.62-4.4,2.89-2.89,4.44-6.73,4.39-10.82-.11-8.16-6.96-14.8-15.26-14.8h-47.47c-13.99,0-27.15,5.45-37.04,15.34l-31.99,31.99-22.84,22.84c-1.15,1.15-1.79,2.68-1.79,4.31v47.82c0,3.36,2.73,6.09,6.09,6.09h41.25c1.88,0,3.69-.89,4.83-2.38l21.2-27.63c1.85-2.42,1.63-5.86-.53-8.01l-3.25-3.25,5.64-7.35c5.12-6.67,13.67-9.57,21.79-7.4l47.91,12.84c3.51.94,7.21.94,10.72,0l87.51-23.45c4.54-1.22,7.25-5.9,6.03-10.44ZM312.99,233.94c4.07-2.35,9.3-.95,11.65,3.12l2.09,3.63-47.47,12.72,33.72-19.47ZM266.36,243.38l14.93-8.62,11.02-6.36c1.97-1.14,4.27-1.44,6.47-.85,1.97.53,3.66,1.72,4.8,3.38l-48.38,27.93c-2.94-.35-5.74-1.67-7.89-3.83l-.42-.42,19.46-11.23ZM147.85,325.9h-39.43v-46.1l19.9-19.91,14.39,14.39,12.44,12.44,8.1,8.1.03.03,4.74,4.74-20.18,26.3ZM342.39,259.52l-87.51,23.45c-2.27.61-4.67.61-6.94,0l-47.91-12.84c-10.98-2.94-22.56.98-29.48,10.01l-5.05,6.59-5.17-5.17-12.44-12.44-14.39-14.39,29.41-29.41c8.51-8.51,19.83-13.2,31.87-13.2h47.47c4.33,0,7.9,3.41,7.95,7.59.03,2.1-.77,4.07-2.25,5.55-1.46,1.45-3.39,2.26-5.45,2.26h-38.1c-2.02,0-3.65,1.64-3.65,3.65s1.64,3.65,3.65,3.65h12.37l25.38,25.38c5.13,5.14,12.77,7.3,20,5.36l69.31-18.57c4.55-1.22,9.23,1.49,10.45,6.03l1.34,5.01c.17.65-.21,1.32-.86,1.49ZM227.25,142.33c1.07,1.01,1.56,2.47,1.31,3.92l-3.83,21.94c-.55,3.15.72,6.26,3.33,8.12,2.6,1.86,5.96,2.05,8.76.51l19.15-10.57c1.32-.73,2.89-.73,4.21,0l19.15,10.57c2.77,1.53,6.13,1.37,8.76-.51,2.6-1.86,3.88-4.97,3.33-8.12l-3.83-21.94c-.25-1.45.24-2.91,1.31-3.92l15.65-14.73c2.31-2.17,3.16-5.4,2.22-8.43-.94-3.03-3.46-5.21-6.6-5.7l-21.88-3.41c-1.4-.22-2.61-1.1-3.23-2.37l-9.61-19.41h0c-1.4-2.82-4.22-4.58-7.38-4.58s-5.98,1.75-7.38,4.58l-9.61,19.41c-.63,1.27-1.83,2.15-3.23,2.37l-21.88,3.41c-3.13.49-5.66,2.67-6.6,5.7-.94,3.03-.09,6.26,2.22,8.43l15.65,14.73ZM216.35,121.34c.08-.25.27-.56.74-.64l21.88-3.41c3.74-.58,6.98-2.96,8.66-6.35l9.61-19.41c.21-.42.56-.51.83-.51s.62.09.83.51l9.61,19.41c1.68,3.39,4.92,5.77,8.66,6.35l21.88,3.41c.47.07.66.39.74.64.08.25.1.62-.25.94l-15.65,14.72c-2.87,2.7-4.18,6.62-3.5,10.5l3.83,21.94c.08.47-.16.76-.37.91-.22.15-.56.29-.98.06l-19.16-10.57c-3.53-1.95-7.74-1.95-11.27,0l-19.15,10.57c-.42.23-.77.1-.98-.06s-.46-.44-.37-.91l3.83-21.94c.68-3.88-.63-7.81-3.5-10.5l-15.65-14.73c-.35-.33-.33-.69-.25-.94ZM180.45,144.06h10.73c2.02,0,3.65-1.64,3.65-3.65s-1.64-3.65-3.65-3.65h-10.73c-2.02,0-3.65,1.64-3.65,3.65s1.64,3.65,3.65,3.65ZM194.93,160.45l-7.58,7.58c-1.43,1.43-1.43,3.74,0,5.17,1.43,1.43,3.74,1.43,5.17,0l7.58-7.58c1.43-1.43,1.43-3.74,0-5.17-1.43-1.43-3.74-1.43-5.17,0ZM194.88,120.25c1.43,1.43,3.74,1.43,5.17,0s1.43-3.74,0-5.17l-7.59-7.59c-1.43-1.43-3.74-1.43-5.17,0-1.43,1.43-1.43,3.74,0,5.17l7.59,7.59ZM321.29,140.4c0,2.02,1.64,3.65,3.65,3.65h10.73c2.02,0,3.65-1.64,3.65-3.65s-1.64-3.65-3.65-3.65h-10.73c-2.02,0-3.65,1.64-3.65,3.65ZM323.61,173.2c1.43,1.43,3.74,1.43,5.17,0,1.43-1.43,1.43-3.74,0-5.17l-7.58-7.58c-1.43-1.43-3.74-1.43-5.17,0-1.43,1.43-1.43,3.74,0,5.17l7.58,7.58ZM321.24,120.25l7.59-7.59c1.43-1.43,1.43-3.74,0-5.17-1.43-1.43-3.74-1.43-5.17,0l-7.59,7.59c-1.43,1.43-1.43,3.74,0,5.17,1.43,1.43,3.74,1.43,5.17,0Z"/>
+                            </svg>
+                        </div>
+                        <div class="texto">
+                            <p style="font-size: 24px;"><b>Nuevos productos y solucionesz</b> que Element Fleet Management lanzará al mercado.</p>
+                        </div>
+                    </div>
+                    <br><br>
+                    <p style="font-size:24px;">Además, tendrás la oportunidad de intercambiar ideas con otros tomadores de decisiones y fortalecer tu red profesional.</p>
+                    <br><br>
+                    <p style="font-size:24px;"><b><span style="color:#05d7d2;">Únete a líderes y expertos de la industria en un espacio exclusivo</span> para conocer tendencias, innovaciones y oportunidades.</b></p>
+                    <br><br>
+                    <h2 class="linea" style="color:#05d7d2;text-transform: uppercase;font-size: 3em;font-weight: 600;margin-bottom: 25px;">2 de octubre, 2025</h2>
+                    <p style="font-size: 20px;text-transform: uppercase;"><b>Fiesta Americana Valle – Monterrey</b></p>
+                    <p style="font-size: 20px;text-transform: uppercase;"><b><span style="color:#05d7d2;">8:30 a.m. – Desayuno incluido</span></b></p>
+                </div>
+                <div class="rightContainer">
+                    <div class="formContainer">
+                       %%content%%
+
+                       <!-- <form class="form">
+                        <p class="submit">
+                        <input type="submit"/>
+                    </p>
+                       </form> -->
+                    </div>
+                </div>
+            </div>
+        </div>  
+    </section>
+
+    <footer>
+        <div class="container">                   
+            <a href="https://www.facebook.com/ElementFleetMexico" title="facebook" class="facebook" rel="nofollow" target="_blank">
+                    <svg class="fb" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/></svg>
+                    <p>Element Fleet México</p>
+            </a>
+            <a href="https://www.youtube.com/channel/UCVCleqJyTfTyfi45uFYnmPA" title="youtube-play" class="youtube" rel="nofollow" target="_blank">
+                    <svg class="yt" width="22.22" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"/></svg>
+                    <p>Element Fleet Management México</p>
+            </a>
+            <a href="https://www.linkedin.com/showcase/element-fleet-management-mexico" title="linkedin" class="linkedin" rel="nofollow" target="_blank">
+                    <svg class="ln" width="25" height="25" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+                    <p>Element Fleet Management México</p>              
+            </a>
+            <span class="copyright-text">&copy;<script>document.write(new Date().getFullYear());</script> Element Fleet Management Corp. All rights reserved <script>document.write(new Date().getFullYear());</script></span>
+        </div>
+    </footer>           
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+    <!--[if lt IE 7]>
+    <script src='http://images.Go.elementfleet.com/i/IE7.js'></script><script type='text/javascript'>var elements = document.all;var len = elements.length;for(var i = 0; i<len; i+=1){IE7.Layout.fixRight(elements[i]);IE7.Layout.fixBottom(elements[i]);}</script>
+    <!--[endif]---->
+
+    <!-------------------------------------------------------------------------------------------->
+    <!------ START DemandBase JavaScript Tag ------>
+    <script>
+    (function(d,b,a,s,e){ var t = b.createElement(a),
+      fs = b.getElementsByTagName(a)[0]; t.async=1; t.id=e; t.src=s;
+      fs.parentNode.insertBefore(t, fs); })
+    (window,document,'script','https://tag.demandbase.com/11a60f90.min.js','demandbase_js_lib');  
+    </script>
+    <!------ END DemandBase JavaScript Tag ------>
+    <!-------------------------------------------------------------------------------------------->
+
+    <!-------------------------------------------------------------------------------------------->
+    <!------ START UTM Parsing JavaScript ------>
+    <script type="text/javascript">
+    // Parse the URL
+    function getParameterByName(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+        results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+    // Give the URL parameters variable names
+    var utmsource = getParameterByName('utm_source');
+    var source = getParameterByName('source');
+    var campaign = getParameterByName('utm_campaign');
+     
+    // Put the variable names into the hidden fields in the form. selector should be "p.YOURFIELDNAME input"
+    document.querySelector("p.source input").value = source;
+    document.querySelector("p.utm_source input").value = utmsource;
+    document.querySelector("p.utm_campaign input").value = campaign;
+    </script>
+    <!------ END UTM Parsing JavaScript ------>
+    <!-------------------------------------------------------------------------------------------->
+
+
+    </body>
+</html>
