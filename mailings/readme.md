@@ -1,4 +1,4 @@
-#Mailins de ELEMENT
-##2025
+# Mailings de ELEMENT
+## 2025
 - Template 2 columnas responsive: <a href="mailings/2025/2025-06-ELE-ML3_CAB2025-r3.html">2025-06-ELE-ML3_CAB2025-r3.html</a>
 - Template 2 columnas con 7 links <a href="mailings/2025/2025-septiembre-02-ELE-mailing.html">2025-septiembre-02-ELE-mailing.html</a>
