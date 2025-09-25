@@ -1,7 +1,7 @@
 # Landings de Element
 ## 2025
 25/septiembre/2025 - Nueva Imagen Element
-- <a href="2025-09-25-ELE-Charging-Subscription-Model_STP.html">Landing Formulario</a>  (con iconos en 2 columnas ,  tabla & numeros) 
+- <a href="2025/2025-09-25-ELE-Charging-Subscription-Model_STP.html">Landing Formulario</a>  (con iconos en 2 columnas ,  tabla & numeros) 
 
 
 02/Septiembre/2025 - Logo anterior Element
